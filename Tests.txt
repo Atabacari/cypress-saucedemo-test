@@ -1,0 +1,77 @@
+**Test Scenarios for the Saucedemo Website**
+
+**Authorization**
+
+**Positive Scenario:**  
+- Login with a valid username and password.
+
+**Negative Scenarios:**  
+- Login with an incorrect username.  
+- Login with an incorrect password.  
+- Login with empty fields.  
+- Attempt to log in with a blocked user (user: `locked_out_user`).
+
+---
+
+**Viewing Products**
+
+- Verify the product list is displayed after a successful login.  
+- Product sorting:  
+  - By price (ascending/descending).  
+  - By name (alphabetical order).  
+- Product card verification:  
+  - Ensure the presence of name, price, and description.
+
+---
+
+**Cart**
+
+**Adding products to the cart:**  
+- Add a single product to the cart.  
+- Add multiple products to the cart.  
+
+**Removing products from the cart:**  
+- Remove a product from the product list.  
+- Remove a product from the cart page.  
+
+**Cart icon verification:**  
+- Ensure the product count in the cart icon updates after adding/removing items.
+
+---
+
+**Checkout**
+
+**Starting the checkout process:**  
+- Navigate from the cart to the checkout form.  
+
+**Filling out the form:**  
+- Successfully complete the form with valid data.  
+- Attempt to proceed with empty fields.  
+
+**Final page verification:**  
+- Ensure the total amount is correct.  
+- Verify product details.
+
+---
+
+**Logout**
+
+- Verify logging out:  
+  - Clicking "Logout" redirects to the login page.
+
+---
+
+**Error Verification**
+
+**Authorization:**  
+- Verify error messages are displayed for incorrect login credentials.  
+
+**Checkout form completion:**  
+- Verify error messages are displayed when required fields are left blank.
+
+
+
+Извлечь список элементов с атрибутом [data-test="inventory-item"].
+Извлечь текст из каждого элемента.
+Сортировать полученные текстовые значения.
+Сравнить отсортированные значения с оригинальными, чтобы убедиться, что они отсортированы по алфавиту.
